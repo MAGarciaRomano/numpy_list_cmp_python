@@ -19,6 +19,9 @@ if __name__ == '__main__':
     # (len) de un string pasado como parámetro
 
     # len_string = lambda......
+    len_string = lambda x: len(x)
+    palabra_len = len_string('comprobación')
+    print('La palabra comprobación tiene', palabra_len, 'caracteres.')
 
     # 2)
     # Lista de string
@@ -35,5 +38,9 @@ if __name__ == '__main__':
     # directamente la lambda.
 
     # palabras_len = list(map....)
+    palabras_len = list(map(lambda x: len(x), palabras))
+    
+    for p in range(3):
+        print('La palabra', palabras[p], 'tiene', palabras_len[p], 'caracteres.')
 
-    print("terminamos")
+    print("Terminamos")
