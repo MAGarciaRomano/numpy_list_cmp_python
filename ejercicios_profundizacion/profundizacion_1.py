@@ -24,7 +24,7 @@ que ya dispongamos de Python. El objetivo es:
 2) Luego de generar la lista sumar los números y ver si el resultado
     de la suma es menor o igual a 21
     a) Si el número es menor o igual a 21 se imprime en pantalla
-        la suma y los números recoletados
+        la suma y los números recolectados
     b) Si el número es mayor a 21 se debe informar al usuario que perdio
 '''
 
@@ -32,5 +32,14 @@ if __name__ == '__main__':
     print('Comenzamos a divertirnos!')
     # A partir de aquí escriba el código que resuelve el enunciado
     # Leer el enunciado con atención y consultar cualquier duda
+    
+    import random
+    
+    tres_numeros = [random.randint(1, 10) for x in range(3)]
+    suma_tres_numeros = sum(tres_numeros)
+    if suma_tres_numeros <= 21:
+        print('Sus tres números:', tres_numeros, '. Suman', suma_tres_numeros, '.')
+    else:
+        print('Ud. ha perdido. Sus números suman más de 21.')
 
-    print("terminamos")
+    print("Terminamos")
